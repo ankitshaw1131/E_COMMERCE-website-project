@@ -135,3 +135,8 @@ productButton.addEventListener("click", () => {
 close.addEventListener("click", () => {
   payment.style.display = "none";
 });
+
+const paidsuccess = document.getElementById("paid");
+document.getElementById("finalpay").addEventListener("click", () => {
+	paidsuccess.innerHTML = `<br><br><br><br><br><br><br><div class="tick"><img src="./img/success.png" class="cardIcon" width="100"><h1>Order Placed Successfully </h1></div><br><br><div class="tick"><h4>Thank You For Shoping With Us! <p> <a href="./index.html"> Click Here To Go To Home</a> </p></h4></div>`;
+});
